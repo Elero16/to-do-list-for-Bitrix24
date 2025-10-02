@@ -1,0 +1,15 @@
+{
+  "name": "deals-list-local-app",
+  "title": {
+    "ru": "Список сделок (локальное приложение)"
+  },
+  "description": {
+    "ru": "Показывает список сделок CRM и фильтр по минимальной сумме"
+  },
+  "version": "1.0.0",
+  "type": "static",
+  "start_url": "index.html",
+  "author": "Твоё имя",
+  "permissions": ["crm"],
+  "platform": "bitrix24"
+}
