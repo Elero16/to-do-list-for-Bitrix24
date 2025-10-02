@@ -1,0 +1,49 @@
+<!doctype html>
+<html lang="ru">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title>Список сделок — Локальное приложение</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  <div id="app" class="container">
+    <header class="header">
+      <h1>Список сделок (CRM)</h1>
+      <p class="subtitle">Отобразить сделки и отфильтровать по минимальной сумме</p>
+    </header>
+
+    <section class="controls">
+      <label>
+        Минимальная сумма:
+        <input id="minAmount" type="number" placeholder="0" min="0" />
+      </label>
+      <button id="btnShow">Показать</button>
+      <button id="btnRefresh" title="Обновить список">Обновить</button>
+      <div id="status" class="status">Ожидание...</div>
+    </section>
+
+    <section class="table-wrap">
+      <table id="dealsTable">
+        <thead>
+          <tr>
+            <th>ID</th>
+            <th>Название (TITLE)</th>
+            <th>Сумма (OPPORTUNITY)</th>
+          </tr>
+        </thead>
+        <tbody id="dealsBody">
+          <!-- rows go here -->
+        </tbody>
+      </table>
+      <div id="noResults" class="no-results" hidden>Нет результатов</div>
+    </section>
+
+    <footer class="footer">
+      <small>Приложение тестовое — использует метод crm.deal.list Bitrix24</small>
+    </footer>
+  </div>
+
+  <script src="app.js"></script>
+</body>
+</html>
